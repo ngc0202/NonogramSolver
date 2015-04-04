@@ -320,6 +320,6 @@ public class Puzzle {
         String data = this.getStateString();
         long time = System.currentTimeMillis() - startTime;
         String state = "[" + ID + ", " + time + ", \"" + data + "\"]";
-        exec.executeAsyncScript("return applyCookieState(" + state + ");");
+        exec.executeScript("return applyCookieState(" + state + ");");
     }
 }
